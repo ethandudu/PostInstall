@@ -6,14 +6,15 @@ then
     exit $?
 fi
 
-sudo apt update -y && sudo apt upgrade -y
-
-
 if whiptail --title "PostInstall" --yesno "Bienvenue dans le script d'installation PostInstall, ce script installera les paquets nécessaires à l'utilsation de votre distribution linux." 8 78 --yes-button "Continuer" --no-button "Quitter";
 then
 
-    SELECTED=$(whiptail --title "Sélection des paquets à installer" --checklist "Sélectionnez les paquest à installer (il est conseillé de tous les installer)" 20 75 10 \
-    php "Pour de développement en php" ON \
+    sudo apt update -y && sudo apt upgrade -y
+
+    SELECTED=$(whiptail --title "Sélection des paquets à installer" --checklist "Sélectionnez les paquest à installer (il est conseillé d'installer ceux qui sont déjà sélectionnés)" 20 75 10 \
+    openssh-client "Pour se connecter via SSH" ON \
+    openssh-server "Pour autoriser les connections ssh" OFF \
+    php "Pour le développement en php" ON \
     php-curl "Complément pour php" ON \
     php-mbstring "Complément pour php" ON \
     apache2 "Pour l'hébergement web" ON \
