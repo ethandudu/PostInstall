@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="Post_intstall_script_logo-256x256.png" width="150"/>
+    <img src="Post_intstall_script-256x256.png" width="150"/>
 </p>
 <h1 align="center">PostInstall</h1>
 
