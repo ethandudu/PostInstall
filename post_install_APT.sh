@@ -32,7 +32,7 @@ echo -e "\e[34m================================="
 echo -e "\e[39m"
 sudo apt install neofetch
 cd ~/
-echo "neofecth" >> .bashrc
+echo "neofetch" >> .bashrc
 echo -e "\e[39m"
 echo -e "\e[32mInstallation de neofetch terminée"
 echo -e "\e[39m"
