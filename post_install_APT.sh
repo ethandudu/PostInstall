@@ -26,11 +26,14 @@ then
     wget "Utilisé pour le téléchargement de fichiers" ON \
     net-tools "Set d'utilitaires réseau" ON \
     git "Utilisé pour le contrôle de version" ON \
+    gh "GitHub CLI" ON \
+    openjdk-21-jdk "Pour le développement en java (21)" ON \
     gcc "Compilateur C" ON \
     g++ "Compilateur C++" ON \
     make "Constructeur de fichiers" ON \
     build-essentials "Essentiels pour la compilation" ON \
     vim "Meilleur éditeur de text" ON \
+    fail2ban "Prévention des attaques par force brute" ON \
     htop "top, en mieux" ON 3>&1 1>&2 2>&3) #Redirection de la sortie
 
 
